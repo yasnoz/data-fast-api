@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-8.3.2, pluggy-1.5.0 -- /home/yasnoz/.pyenv/versions/3.10.6/envs/taxifare-env/bin/python
+cachedir: .pytest_cache
+rootdir: /home/yasnoz/code/yasnoz/07-ML-Ops/04-Predict-in-production/data-fast-api/tests
+configfile: pytest_kitt.ini
+plugins: anyio-3.7.1, asyncio-0.24.0
+asyncio: mode=strict, default_loop_scope=None
+collecting ... collected 12 items / 1 error
+
+==================================== ERRORS ====================================
+________________ ERROR collecting api/test_docker_endpoints.py _________________
+tests/api/test_docker_endpoints.py:27: in <module>
+    docker_port = re.findall(":(\d{4})-", docker_ps_output)[0]
+E   IndexError: list index out of range
+=========================== short test summary info ============================
+ERROR tests/api/test_docker_endpoints.py - IndexError: list index out of range
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+========================= 1 warning, 1 error in 0.59s ==========================
